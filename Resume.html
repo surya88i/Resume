@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Resume</title>
+	<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+	<style type="text/css">
+		body
+		{
+			font-family: 'Bitter', serif;
+		}
+		.form-control::-webkit-input-placeholder { color: black; }  /* WebKit, Blink, Edge */
+		.form-control:-moz-placeholder { color: white; }  /* Mozilla Firefox 4 to 18 */
+		.form-control::-moz-placeholder { color: white; }  /* Mozilla Firefox 19+ */
+		.form-control:-ms-input-placeholder { color: white; }  /* Internet Explorer 10-11 */
+		.form-control::-ms-input-placeholder { color: white; }  /* Microsoft Edge */
+		.img-thumbnail
+		{
+			margin-top: 0px;
+			max-width: 80%;
+		}
+		.share
+		{
+			margin-top: 50px;
+			text-align: center;
+			list-style: none;
+		}
+		.share li
+		{
+			display: inline-block;
+			width:50px;
+			height:50px;
+			box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+			margin-right: 25px;
+			border-radius: 50px;
+			/*line-height: 50px;*/
+			position:relative;
+			overflow: hidden;
+			
+		}
+		.share li a
+		{
+			color: #373737;
+			font-size:24px;
+			position: absolute;
+			top:50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.share li:before
+		{
+			content: '';
+			width:100%;
+			height:100%;
+			top:80%;
+			left:0%;
+			position: absolute;
+			display: inline-block;
+			transition: .3s;
+			 
+		}
+		.share li:nth-child(1):before
+		{
+			background-color:#3b5998;
+		}
+		.share li:nth-child(2):before
+		{
+			background-color:#55acee;
+		}
+		.share li:nth-child(3):before
+		{
+			background-color:#e4405f;
+		}
+		.share li:nth-child(4):before
+		{
+			background-color:#007bb5;
+		}
+		.share li:hover:before
+		{
+			top:0%;
+		}
+		</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div>
+			<h4 class="text-center">My Profile</h4>
+			<br>
+	</div>
+	<div class="col-md-4">
+		<div class="profile">
+			<center><img src="project1.jpg" class="img-responsive img-thumbnail"></center>
+		</div>
+		<div class="profile-name">
+			<h4 class="text-center">SUNIL SHEDGE</h4>
+		</div>
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h4 class="panel-title">Skills</h4>
+			</div>
+			<div class="panel-body">
+				<div>
+					<h4>HTML</h4>
+					<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-success" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+					</div>
+				</div>
+				</div>
+
+				<div>
+					<h4>Bootstrap</h4>
+					<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-success" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+					</div>
+				</div>
+				</div>
+
+				<div>
+					<h4>Flutter</h4>
+					<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-success" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+					</div>
+				</div>
+				</div>
+
+				<div>
+					<h4>Javascript</h4>
+					<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-success" aria-valuenow="60" aria-valuemin="0" aria-valuemax="60" style="width: 70%;">
+					</div>
+				</div>
+				</div>
+
+				<div>
+					<h4>Jquery</h4>
+					<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-success" aria-valuenow="60" aria-valuemin="0" aria-valuemax="60" style="width: 68%;">
+					</div>
+				</div>
+				</div>
+
+				<div>
+					<h4>Angular Js</h4>
+					<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-success" aria-valuenow="60" aria-valuemin="0" aria-valuemax="60" style="width: 65%;">
+					</div>
+				</div>
+				</div>
+
+				<div>
+					<h4>PHP</h4>
+					<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-success" aria-valuenow="60" aria-valuemin="0" aria-valuemax="60" style="width: 60%;">
+					</div>
+				</div>
+				</div>
+
+				<div>
+					<h4>MYSQL</h4>
+					<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-success" aria-valuenow="60" aria-valuemin="0" aria-valuemax="60" style="width: 70%;">
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="col-md-8">
+		<div class="row">
+			
+			<form class="form">
+
+				<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					<input type="text" name="user" class="form-control" placeholder="Sunil Babasaheb Shedge" required="">
+				</div>
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+					<input type="email" name="email" class="form-control" placeholder="swarajya888@gmail.com" required="">
+				</div>
+				<br>
+
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+					<input type="text" name="address" class="form-control" placeholder="Bank of Maharashtra Near Ambegoan,pune" required="">
+				</div>
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-phone"></i></span>
+					<input type="text" name="mobile" class="form-control" placeholder="8668796251" max="10" required="">
+				</div>
+			</form>
+			<br><br>
+
+			<div class="Objective">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h4 class="panel-title">Career Objective:-</h4>
+					</div>
+					<div class="panel-body">
+						
+						<p>To be associated with a dynamic organization in a challenging role,which allows me to exhibit my potential and play an active role in the growth of the organization.Discpline and hard work are the pillars of success.</p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="about">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h4 class="panel-title">Education Qualification:-</h4>
+					</div>
+					<div class="panel-body">
+						<h5>B.Sc(Computer Science)</h5>
+						<p>I have done bachelors of computer Science from university of pune.</p>
+						<p>Website <a href="http://www.unipune.ac.in">http://www.unipune.ac.in</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="Strength">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h4 class="panel-title">Strengths:-</h4>
+					</div>
+					<div class="panel-body">
+						<ul>
+							<li>Innovative in performing any responsibities.</li>
+							<li>Good communication skills.</li>
+							<li>Ability in learning new technolgy in short period.</li>
+							<li>confident.</li>
+							<li>Ability to work with team.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="panel panel-success">
+					<div class="panel-heading">
+						<h4 class="panel-title">Social:-</h4>
+					</div>
+				</div>
+			
+			<ul class="share">
+				<li title="facebook" data-toggle="tooltip" data-placement="top"><a href="https://www.facebook.com/surya.shinde.35574"><i class="fa fa-facebook"></i></a></li>
+				<li title="twitter" data-toggle="tooltip" data-placement="top"><a href="#"><i class="fa fa-github"></i></a></li>
+				<li title="instagram" data-toggle="tooltip" data-placement="top"><a href="https://www.instagram.com/shedge1860/"><i class="fa fa-instagram"></i></a></li>
+				<li title="whatsapp" data-toggle="tooltip" data-placement="top"><a href=""><i class="fa fa-linkedin"></i></a></li>
+			</ul>
+
+			<br>
+			<center><button class="btn btn-default" onclick="print();">Download</button></center>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
